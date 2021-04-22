@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MindBodyCountryList</string>
+    <string name="country_name">Country name</string>
+    <string name="check_network">Please Check Internet Connection</string>
+    <string name="total_province">"Total Province : "</string>
+    <string name="no_province">"No province for this country "</string>
+    <string name="no_data_found">No data found</string>
+    <string name="retry">Retry</string>
+    <string name="ok">Ok</string>
+    <string name="country_detail">Country Details</string>
+    <string name="country_list">Country List</string>
+
+</resources>

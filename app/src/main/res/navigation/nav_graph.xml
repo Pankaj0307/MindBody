@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_country">
+
+    <fragment
+        android:id="@+id/nav_country"
+        android:name="com.mb.countrylist.view.fragment.FragmentCountryList"
+        android:label="@string/country_list"
+        tools:layout="@layout/fragment_country_list">
+        <action
+            android:id="@+id/action_list_to_details"
+            app:destination="@id/nav_details"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_country"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.mb.countrylist.view.fragment.FragmentCountryDetails"
+        android:label="@string/country_detail"
+        tools:layout="@layout/fragment_country_details">
+        <action
+            android:id="@+id/action_nav_company_to_nav_bank"
+            app:destination="@+id/nav_country"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_country"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+</navigation>
